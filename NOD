@@ -1,1 +1,32 @@
-FfeFE
+j = input('Введите первое число больше нуля = ')
+g = input('Введите второе больше нуля = ')
+
+try:
+    j.isdigit() and g.isdigit() and g > 0 and j > 0
+    print('Были получены неверные данные')
+    j = input('Введите первое число больше нуля = ')
+    g = input('Введите второе больше нуля = ')
+except:
+    
+    j = int(j)
+    g = int(g)
+    
+    f = []
+    f.append(j) 
+    f.append(g)
+    print(f)
+    k = 0
+    while j != g or j % g != 0 or g % j != 0:
+    
+        if j > g:
+            j = j - g
+            
+        else:
+            g = g - j
+            
+    if j == g:
+        print(j)
+    elif j > g:
+        print(g)
+    else:
+        print(j)
